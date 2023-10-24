@@ -1,0 +1,26 @@
+{
+  "animalitos": [
+    {
+      "nombre": "Juan123",
+      "raza": "ZZZZ66",
+      "tipoMascota": "Auto",
+      "id": 1
+    },
+    {
+      "nombre": "Maria777",
+      "raza": "ZZZZ66",
+      "tipoMascota": "Auto",
+      "id": 2
+    }
+
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "Sidharta",
+      "password": "duoc",
+      "role": "usuario",
+      "isactive": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-img src="assets/header.jpg"></ion-img>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/agregar']">Agregar
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let a of animalitos; let i=index" [routerLink]="['/detalle', a.id]">  <!--url/animalitos/id-->
+      <ion-label>{{a['nombre']}} &nbsp; {{a['tipoMascota']}} </ion-label>
+      
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="end" style="color: black">
+      <span style="margin-right: 15px; font-size: 12px; color: rgb(16, 16, 188);" >Copyright © 2023</span>
+      <ion-icon name="logo-twitter" size="large" class="footer-icon"></ion-icon>
+      <span style="margin-right: 30px;"></span>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

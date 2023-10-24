@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-img src="assets/header.jpg"></ion-img>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/listar']">Listar
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Agregar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre de usuario:</ion-label>
+      <ion-input type="text" name="txtNombre" [(ngModel)]="newAnimalito.nombre" placeholder="JuanConductor" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Tipo Vehiculo:</ion-label>
+      <ion-input type="text" name="txtTipo" [(ngModel)]="newAnimalito.tipoMascota" placeholder="Auto,camioneta,etc" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Patente:</ion-label>
+      <ion-input type="text" name="txtRaza" [(ngModel)]="newAnimalito.raza" placeholder="ABCD11" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="crearAnimalito()" expand="block" color="success">Crear usuario conductor</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="end" style="color: black">
+      <span style="margin-right: 15px; font-size: 12px; color: rgb(16, 16, 188);" >Copyright © 2023</span>
+      <ion-icon name="logo-twitter" size="large" class="footer-icon"></ion-icon>
+      <span style="margin-right: 30px;"></span>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
